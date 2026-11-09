@@ -1,0 +1,21 @@
+{
+	"name": "DS_GetMeta_FiletrCSV_CopyADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_GetMeta_FiletrCSV_CopyADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "MultipleFiles",
+				"fileSystem": "output"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

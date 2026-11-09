@@ -1,0 +1,47 @@
+{
+	"name": "PL_StoredProcedure",
+	"properties": {
+		"activities": [
+			{
+				"name": "Stored procedure Activity",
+				"type": "SqlServerStoredProcedure",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"storedProcedureName": "[dbo].[InsertCustomer]",
+					"storedProcedureParameters": {
+						"CustomerID": {
+							"value": "143",
+							"type": "Int32"
+						},
+						"FirstName": {
+							"value": "Divyashree",
+							"type": "String"
+						},
+						"LastName": {
+							"value": "Narayanaswamy",
+							"type": "String"
+						}
+					}
+				},
+				"linkedServiceName": {
+					"referenceName": "LS_StoredProcedure",
+					"type": "LinkedServiceReference"
+				}
+			}
+		],
+		"folder": {
+			"name": "VisionBoard"
+		},
+		"annotations": [],
+		"lastPublishTime": "2026-11-03T12:34:05Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

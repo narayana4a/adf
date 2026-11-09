@@ -1,0 +1,13 @@
+{
+	"name": "DS_SourceRESTapi_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceRESTapi_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

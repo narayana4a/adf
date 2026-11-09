@@ -1,0 +1,19 @@
+{
+	"name": "DS_SourceXML_ADLS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SourceXML_ADLS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Xml",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "basic-structure.xml",
+				"fileSystem": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

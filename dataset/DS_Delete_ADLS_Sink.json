@@ -1,0 +1,23 @@
+{
+	"name": "DS_Delete_ADLS_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Delete_ADLS_Sink",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"FolderName": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

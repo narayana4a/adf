@@ -2,6 +2,14 @@
 	"name": "ls_lookup_maxvalue_migration",
 	"type": "Microsoft.DataFactory/factories/linkedservices",
 	"properties": {
+		"parameters": {
+			"Tablename": {
+				"type": "string"
+			},
+			"Schemaname": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "SqlServer",
 		"typeProperties": {
@@ -11,7 +19,7 @@
 			"trustServerCertificate": false,
 			"authenticationType": "SQL",
 			"userName": "sa",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI5NDYwMDFmOC1mMDc5LTRkOGQtYTBkOS1lYTEyNTBlOTMwNjQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJiN2FkOWY3Ni03NzI4LTQ4OGYtODVlMC1hNmRjYzk1NmNjN2MiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
 		},
 		"connectVia": {
 			"referenceName": "SelfHosted-IR",
